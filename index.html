@@ -56,8 +56,8 @@
     .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border-radius:12px;text-decoration:none;font-weight:800}
     .btn.primary{background:var(--brand);color:#fff}
     .btn.secondary{background:#edf5f7;color:var(--brand)}
-    .map{overflow:hidden;border-radius:15px;background:#e9eef0;margin-top:14px}
-    .map iframe{display:block;width:100%;height:300px;border:0}
+    .mymap{overflow:hidden;border-radius:15px;background:#e9eef0;margin-top:14px}
+    .mymap iframe{display:block;width:100%;height:480px;border:0}
     table{width:100%;border-collapse:collapse}
     th,td{padding:12px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
     th{color:var(--muted);font-size:.8rem}
@@ -72,7 +72,7 @@
       .meta{grid-template-columns:1fr;gap:2px}
       .meta b{margin-top:7px}
       .hotel-top{display:block}
-      .map iframe{height:240px}
+      .mymap iframe{height:340px}
       table{font-size:.92rem}
     }
     @media(max-width:480px){
@@ -155,6 +155,14 @@
   </section>
 
   <section class="card">
+    <h2>旅のマップ（Google マイマップ）</h2>
+    <p class="small">レンタカー移動ルート4区間・空港・宿泊先・レストラン4店舗を1つのマイマップにまとめています。左上のメニューからレイヤの表示／非表示を切り替えられます。</p>
+    <div class="mymap">
+      <iframe src="https://www.google.com/maps/d/embed?mid=1fxbTU68BcPgVEvkaEIVoOxRGX0be7lw" loading="lazy" title="高知旅行2026 統合マップ（移動ルート・宿泊先・レストラン）" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="card">
     <h2>レンタカー移動ルート</h2>
 
     <article class="hotel">
@@ -165,10 +173,7 @@
         </div>
       </div>
       <div class="actions">
-        <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=高知龍馬空港&amp;destination=高知パシフィックホテル&amp;travelmode=driving" target="_blank" rel="noopener">Google Mapsでナビ</a>
-      </div>
-      <div class="map">
-        <iframe src="https://www.google.com/maps?output=embed&amp;saddr=高知龍馬空港&amp;daddr=高知パシフィックホテル&amp;dirflg=d" loading="lazy" title="高知空港から高知パシフィックホテルまでの移動ルート"></iframe>
+        <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=高知龍馬空港&amp;destination=高知パシフィックホテル&amp;travelmode=driving" target="_blank" rel="noopener noreferrer">Google Mapsでナビ</a>
       </div>
     </article>
 
@@ -180,10 +185,7 @@
         </div>
       </div>
       <div class="actions">
-        <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=高知パシフィックホテル&amp;destination=ホテル星羅四万十&amp;travelmode=driving" target="_blank" rel="noopener">Google Mapsでナビ</a>
-      </div>
-      <div class="map">
-        <iframe src="https://www.google.com/maps?output=embed&amp;saddr=高知パシフィックホテル&amp;daddr=ホテル星羅四万十&amp;dirflg=d" loading="lazy" title="高知パシフィックホテルからホテル星羅四万十までの移動ルート"></iframe>
+        <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=高知パシフィックホテル&amp;destination=ホテル星羅四万十&amp;travelmode=driving" target="_blank" rel="noopener noreferrer">Google Mapsでナビ</a>
       </div>
     </article>
 
@@ -195,10 +197,7 @@
         </div>
       </div>
       <div class="actions">
-        <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=ホテル星羅四万十&amp;destination=JRクレメントイン高知&amp;travelmode=driving" target="_blank" rel="noopener">Google Mapsでナビ</a>
-      </div>
-      <div class="map">
-        <iframe src="https://www.google.com/maps?output=embed&amp;saddr=ホテル星羅四万十&amp;daddr=JRクレメントイン高知&amp;dirflg=d" loading="lazy" title="ホテル星羅四万十からJRクレメントイン高知までの移動ルート"></iframe>
+        <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=ホテル星羅四万十&amp;destination=JRクレメントイン高知&amp;travelmode=driving" target="_blank" rel="noopener noreferrer">Google Mapsでナビ</a>
       </div>
     </article>
 
@@ -210,10 +209,7 @@
         </div>
       </div>
       <div class="actions">
-        <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=JRクレメントイン高知&amp;destination=高知龍馬空港&amp;travelmode=driving" target="_blank" rel="noopener">Google Mapsでナビ</a>
-      </div>
-      <div class="map">
-        <iframe src="https://www.google.com/maps?output=embed&amp;saddr=JRクレメントイン高知&amp;daddr=高知龍馬空港&amp;dirflg=d" loading="lazy" title="JRクレメントイン高知から高知空港までの移動ルート"></iframe>
+        <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=JRクレメントイン高知&amp;destination=高知龍馬空港&amp;travelmode=driving" target="_blank" rel="noopener noreferrer">Google Mapsでナビ</a>
       </div>
     </article>
   </section>
@@ -237,11 +233,8 @@
         <b>食事</b><span>素泊まり</span>
       </div>
       <div class="actions">
-        <a class="btn primary" href="https://www.kochi-pacific.co.jp/" target="_blank" rel="noopener">公式サイト</a>
-        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=高知パシフィックホテル" target="_blank" rel="noopener">Google Maps</a>
-      </div>
-      <div class="map">
-        <iframe src="https://www.google.com/maps?q=高知パシフィックホテル&output=embed" loading="lazy" title="高知パシフィックホテルの地図"></iframe>
+        <a class="btn primary" href="https://www.kochi-pacific.co.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=高知パシフィックホテル" target="_blank" rel="noopener noreferrer">Google Maps</a>
       </div>
     </article>
 
@@ -261,11 +254,8 @@
         <b>食事</b><span>朝食1回・夕食1回（四万十会席）</span>
       </div>
       <div class="actions">
-        <a class="btn primary" href="https://www.seirashimanto.com/" target="_blank" rel="noopener">公式サイト</a>
-        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=ホテル星羅四万十" target="_blank" rel="noopener">Google Maps</a>
-      </div>
-      <div class="map">
-        <iframe src="https://www.google.com/maps?q=ホテル星羅四万十&output=embed" loading="lazy" title="ホテル星羅四万十の地図"></iframe>
+        <a class="btn primary" href="https://www.seirashimanto.com/" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=ホテル星羅四万十" target="_blank" rel="noopener noreferrer">Google Maps</a>
       </div>
     </article>
 
@@ -285,11 +275,8 @@
         <b>食事</b><span>素泊まり</span>
       </div>
       <div class="actions">
-        <a class="btn primary" href="https://www.jrclement.co.jp/inn/kochi/" target="_blank" rel="noopener">公式サイト</a>
-        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=JRクレメントイン高知" target="_blank" rel="noopener">Google Maps</a>
-      </div>
-      <div class="map">
-        <iframe src="https://www.google.com/maps?q=JRクレメントイン高知&output=embed" loading="lazy" title="JRクレメントイン高知の地図"></iframe>
+        <a class="btn primary" href="https://www.jrclement.co.jp/inn/kochi/" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=JRクレメントイン高知" target="_blank" rel="noopener noreferrer">Google Maps</a>
       </div>
     </article>
   </section>
@@ -309,11 +296,8 @@
         <b>電話</b><span><a href="tel:0888732624">088-873-2624</a></span>
       </div>
       <div class="actions">
-        <a class="btn primary" href="https://tabelog.com/kochi/A3901/A390101/39000063/" target="_blank" rel="noopener">食べログ</a>
-        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&amp;query=黒尊 高知県高知市本町3-4-13" target="_blank" rel="noopener">Google Maps</a>
-      </div>
-      <div class="map">
-        <iframe src="https://www.google.com/maps?q=黒尊 高知県高知市本町3-4-13&amp;output=embed" loading="lazy" title="黒尊の地図"></iframe>
+        <a class="btn primary" href="https://tabelog.com/kochi/A3901/A390101/39000063/" target="_blank" rel="noopener noreferrer">食べログ</a>
+        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&amp;query=黒尊 高知県高知市本町3-4-13" target="_blank" rel="noopener noreferrer">Google Maps</a>
       </div>
     </article>
 
@@ -329,11 +313,8 @@
         <b>電話</b><span><a href="tel:0888217222">088-821-7222</a></span>
       </div>
       <div class="actions">
-        <a class="btn primary" href="https://tabelog.com/kochi/A3901/A390101/39007166/" target="_blank" rel="noopener">食べログ</a>
-        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&amp;query=アンナータ 高知県高知市南はりまや町1-17-23 MPビル 2F" target="_blank" rel="noopener">Google Maps</a>
-      </div>
-      <div class="map">
-        <iframe src="https://www.google.com/maps?q=アンナータ 高知県高知市南はりまや町1-17-23 MPビル 2F&amp;output=embed" loading="lazy" title="アンナータの地図"></iframe>
+        <a class="btn primary" href="https://tabelog.com/kochi/A3901/A390101/39007166/" target="_blank" rel="noopener noreferrer">食べログ</a>
+        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&amp;query=アンナータ 高知県高知市南はりまや町1-17-23 MPビル 2F" target="_blank" rel="noopener noreferrer">Google Maps</a>
       </div>
     </article>
 
@@ -349,11 +330,8 @@
         <b>電話</b><span><a href="tel:0888241308">088-824-1308</a></span>
       </div>
       <div class="actions">
-        <a class="btn primary" href="https://tabelog.com/kochi/A3901/A390101/39007487/" target="_blank" rel="noopener">食べログ</a>
-        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&amp;query=将人 高知県高知市廿代町2-8 1F" target="_blank" rel="noopener">Google Maps</a>
-      </div>
-      <div class="map">
-        <iframe src="https://www.google.com/maps?q=将人 高知県高知市廿代町2-8 1F&amp;output=embed" loading="lazy" title="将人の地図"></iframe>
+        <a class="btn primary" href="https://tabelog.com/kochi/A3901/A390101/39007487/" target="_blank" rel="noopener noreferrer">食べログ</a>
+        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&amp;query=将人 高知県高知市廿代町2-8 1F" target="_blank" rel="noopener noreferrer">Google Maps</a>
       </div>
     </article>
 
@@ -369,11 +347,8 @@
         <b>電話</b><span><a href="tel:0888857041">088-885-7041</a></span>
       </div>
       <div class="actions">
-        <a class="btn primary" href="https://tabelog.com/kochi/A3901/A390101/39004068/" target="_blank" rel="noopener">食べログ</a>
-        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&amp;query=ラ・プリマ・ヴォルタ 高知県高知市はりまや町2-10-1" target="_blank" rel="noopener">Google Maps</a>
-      </div>
-      <div class="map">
-        <iframe src="https://www.google.com/maps?q=ラ・プリマ・ヴォルタ 高知県高知市はりまや町2-10-1&amp;output=embed" loading="lazy" title="ラ・プリマ・ヴォルタの地図"></iframe>
+        <a class="btn primary" href="https://tabelog.com/kochi/A3901/A390101/39004068/" target="_blank" rel="noopener noreferrer">食べログ</a>
+        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&amp;query=ラ・プリマ・ヴォルタ 高知県高知市はりまや町2-10-1" target="_blank" rel="noopener noreferrer">Google Maps</a>
       </div>
     </article>
   </section>
@@ -418,7 +393,7 @@
         <li>運転免許証を持参</li>
         <li>レンタカー返却は8/16 17:15</li>
         <li>ホテル星羅四万十は夕食付き。到着が遅れそうな場合はホテルへ連絡</li>
-        <li>Google Mapsリンクはナビ起動用、埋め込み地図は位置確認用</li>
+        <li>Google Mapsリンクはナビ起動用、埋め込みのマイマップは位置確認用</li>
       </ul>
     </div>
   </section>
