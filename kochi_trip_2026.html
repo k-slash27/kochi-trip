@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f5f7a">
+  <title>高知 4日間の旅｜2026.08.13–08.16</title>
+  <style>
+    :root{
+      --bg:#f4f7f8; --card:#fff; --ink:#1f2a30; --muted:#6d7b83;
+      --brand:#0f5f7a; --brand2:#2b8fa8; --line:#dfe8eb;
+      --accent:#eaf6f8; --warn:#fff6dc; --shadow:0 12px 32px rgba(27,54,68,.08);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Yu Gothic",sans-serif;
+      color:var(--ink); background:var(--bg); line-height:1.7;
+    }
+    a{color:inherit}
+    .hero{
+      background:linear-gradient(135deg,#0d566f 0%,#1c809a 55%,#54b5c3 100%);
+      color:#fff; padding:54px 20px 46px;
+    }
+    .wrap{max-width:980px;margin:auto}
+    .eyebrow{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;opacity:.82}
+    h1{font-size:clamp(2rem,5vw,3.7rem);line-height:1.08;margin:.25rem 0 .8rem}
+    .hero p{margin:.25rem 0;opacity:.95}
+    .hero-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}
+    .hero-stat{padding:14px 16px;border:1px solid rgba(255,255,255,.24);background:rgba(255,255,255,.10);border-radius:16px}
+    .hero-stat small{display:block;opacity:.78}
+    .hero-stat strong{font-size:1.05rem}
+    main{padding:28px 18px 64px}
+    .card{background:var(--card);border-radius:var(--radius);padding:26px;margin:0 0 22px;box-shadow:var(--shadow)}
+    h2{font-size:1.35rem;margin:0 0 18px;color:var(--brand)}
+    h3{margin:.25rem 0 .55rem;font-size:1.18rem}
+    .summary{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .summary > div{background:#f7fafb;border:1px solid var(--line);border-radius:15px;padding:14px}
+    .label{display:block;color:var(--muted);font-size:.8rem;font-weight:700;margin-bottom:2px}
+    .timeline{position:relative;margin-left:10px;padding-left:28px}
+    .timeline:before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#c6dce2}
+    .day{position:relative;padding:0 0 30px}
+    .day:last-child{padding-bottom:0}
+    .day:before{content:"";position:absolute;left:-27px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--brand2);box-shadow:0 0 0 5px #e8f5f7}
+    .date{color:var(--brand);font-weight:800}
+    .event-list{list-style:none;padding:0;margin:12px 0 0}
+    .event-list li{padding:9px 0;border-bottom:1px dashed var(--line)}
+    .event-list li:last-child{border:0}
+    .hotel{border:1px solid var(--line);border-radius:18px;padding:20px;margin-top:18px}
+    .hotel-top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+    .pill{display:inline-block;background:var(--accent);color:var(--brand);padding:4px 10px;border-radius:999px;font-size:.78rem;font-weight:800}
+    .meta{display:grid;grid-template-columns:145px 1fr;gap:7px 12px;margin:14px 0}
+    .meta b{color:var(--muted)}
+    .actions{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border-radius:12px;text-decoration:none;font-weight:800}
+    .btn.primary{background:var(--brand);color:#fff}
+    .btn.secondary{background:#edf5f7;color:var(--brand)}
+    .map{overflow:hidden;border-radius:15px;background:#e9eef0;margin-top:14px}
+    .map iframe{display:block;width:100%;height:300px;border:0}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:12px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    th{color:var(--muted);font-size:.8rem}
+    .notice{background:var(--warn);border-radius:14px;padding:16px 18px}
+    .money{font-size:1.7rem;font-weight:900;color:var(--brand)}
+    .small{color:var(--muted);font-size:.88rem}
+    footer{text-align:center;padding:24px 18px 44px;color:var(--muted);font-size:.85rem}
+    @media(max-width:760px){
+      .hero{padding-top:38px}
+      .hero-grid,.summary{grid-template-columns:1fr 1fr}
+      .card{padding:20px}
+      .meta{grid-template-columns:1fr;gap:2px}
+      .meta b{margin-top:7px}
+      .hotel-top{display:block}
+      .map iframe{height:240px}
+      table{font-size:.92rem}
+    }
+    @media(max-width:480px){
+      .hero-grid,.summary{grid-template-columns:1fr}
+      .actions{display:grid;grid-template-columns:1fr 1fr}
+      .btn{padding:10px 9px;font-size:.9rem}
+    }
+  </style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">KOCHI ROAD TRIP 2026</div>
+    <h1>高知・四万十<br>4日間の旅</h1>
+    <p>2026年8月13日（木）〜 8月16日（日）</p>
+    <p>羽田 ⇄ 高知 / ANA + レンタカー</p>
+    <div class="hero-grid">
+      <div class="hero-stat"><small>旅行日程</small><strong>4日間</strong></div>
+      <div class="hero-stat"><small>参加者</small><strong>2名</strong></div>
+      <div class="hero-stat"><small>移動</small><strong>ANA + 車</strong></div>
+      <div class="hero-stat"><small>支払額</small><strong>309,000円</strong></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <h2>旅行概要</h2>
+    <div class="summary">
+      <div><span class="label">参加者</span>うるが かおり<br>たにぐち なおひで</div>
+      <div><span class="label">往路</span>ANA 565便<br>羽田 14:05 → 高知 15:25</div>
+      <div><span class="label">復路</span>ANA 570便<br>高知 18:15 → 羽田 19:45</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>旅程</h2>
+    <div class="timeline">
+      <article class="day">
+        <div class="date">DAY 1｜8月13日（木）</div>
+        <h3>東京 → 高知</h3>
+        <ul class="event-list">
+          <li><b>14:05</b> 羽田空港 出発（ANA565便）</li>
+          <li><b>15:25</b> 高知空港 到着</li>
+          <li><b>15:55</b> オリックスレンタカー 高知空港店で配車</li>
+          <li><b>16:00〜</b> 高知パシフィックホテル チェックイン</li>
+        </ul>
+      </article>
+      <article class="day">
+        <div class="date">DAY 2｜8月14日（金）</div>
+        <h3>高知市 → 四万十</h3>
+        <ul class="event-list">
+          <li><b>〜11:00</b> 高知パシフィックホテル チェックアウト</li>
+          <li>レンタカーで四万十方面へ移動</li>
+          <li><b>18:00〜</b> ホテル星羅四万十 チェックイン</li>
+          <li>夕食：四万十会席</li>
+        </ul>
+      </article>
+      <article class="day">
+        <div class="date">DAY 3｜8月15日（土）</div>
+        <h3>四万十 → 高知市</h3>
+        <ul class="event-list">
+          <li>ホテル朝食</li>
+          <li><b>〜10:00</b> ホテル星羅四万十 チェックアウト</li>
+          <li>四万十周辺を観光後、高知市へ</li>
+          <li><b>18:00〜</b> JRクレメントイン高知 チェックイン</li>
+        </ul>
+      </article>
+      <article class="day">
+        <div class="date">DAY 4｜8月16日（日）</div>
+        <h3>高知 → 東京</h3>
+        <ul class="event-list">
+          <li><b>〜11:00</b> JRクレメントイン高知 チェックアウト</li>
+          <li><b>17:15</b> オリックスレンタカー 高知空港店へ返却</li>
+          <li><b>18:15</b> 高知空港 出発（ANA570便）</li>
+          <li><b>19:45</b> 羽田空港 到着</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>宿泊先</h2>
+
+    <article class="hotel">
+      <div class="hotel-top">
+        <div>
+          <span class="pill">8/13 宿泊</span>
+          <h3>高知パシフィックホテル</h3>
+        </div>
+      </div>
+      <div class="meta">
+        <b>住所</b><span>〒780-0053 高知県高知市駅前町1-15</span>
+        <b>電話</b><span><a href="tel:0888840777">088-884-0777</a></span>
+        <b>チェックイン</b><span>16:00</span>
+        <b>チェックアウト</b><span>11:00</span>
+        <b>部屋</b><span>ダブルルーム・禁煙</span>
+        <b>食事</b><span>素泊まり</span>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="https://www.kochi-pacific.co.jp/" target="_blank" rel="noopener">公式サイト</a>
+        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=高知パシフィックホテル" target="_blank" rel="noopener">Google Maps</a>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps?q=高知パシフィックホテル&output=embed" loading="lazy" title="高知パシフィックホテルの地図"></iframe>
+      </div>
+    </article>
+
+    <article class="hotel">
+      <div class="hotel-top">
+        <div>
+          <span class="pill">8/14 宿泊</span>
+          <h3>ホテル星羅四万十</h3>
+        </div>
+      </div>
+      <div class="meta">
+        <b>住所</b><span>〒787-1603 高知県四万十市西土佐用井1100</span>
+        <b>電話</b><span><a href="tel:0880522225">0880-52-2225</a></span>
+        <b>チェックイン</b><span>18:00</span>
+        <b>チェックアウト</b><span>10:00</span>
+        <b>部屋</b><span>四万十川が見える洋室ツイン・禁煙</span>
+        <b>食事</b><span>朝食1回・夕食1回（四万十会席）</span>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="https://www.seirashimanto.com/" target="_blank" rel="noopener">公式サイト</a>
+        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=ホテル星羅四万十" target="_blank" rel="noopener">Google Maps</a>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps?q=ホテル星羅四万十&output=embed" loading="lazy" title="ホテル星羅四万十の地図"></iframe>
+      </div>
+    </article>
+
+    <article class="hotel">
+      <div class="hotel-top">
+        <div>
+          <span class="pill">8/15 宿泊</span>
+          <h3>JRクレメントイン高知</h3>
+        </div>
+      </div>
+      <div class="meta">
+        <b>住所</b><span>〒780-0056 高知県高知市北本町1-10-59</span>
+        <b>電話</b><span><a href="tel:0888553111">088-855-3111</a></span>
+        <b>チェックイン</b><span>18:00</span>
+        <b>チェックアウト</b><span>11:00</span>
+        <b>部屋</b><span>スタンダード・禁煙 / 140cmベッド1台</span>
+        <b>食事</b><span>素泊まり</span>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="https://www.jrclement.co.jp/inn/kochi/" target="_blank" rel="noopener">公式サイト</a>
+        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=JRクレメントイン高知" target="_blank" rel="noopener">Google Maps</a>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps?q=JRクレメントイン高知&output=embed" loading="lazy" title="JRクレメントイン高知の地図"></iframe>
+      </div>
+    </article>
+  </section>
+
+  <section class="card">
+    <h2>フライト</h2>
+    <table>
+      <thead><tr><th>日付</th><th>便</th><th>区間</th><th>時刻</th></tr></thead>
+      <tbody>
+        <tr><td>8/13</td><td>ANA 565</td><td>羽田 → 高知</td><td>14:05 → 15:25</td></tr>
+        <tr><td>8/16</td><td>ANA 570</td><td>高知 → 羽田</td><td>18:15 → 19:45</td></tr>
+      </tbody>
+    </table>
+    <p class="small">オンラインチェックインは各便の出発24時間前から20分前まで。チェックイン後、出発20分前までに保安検査場を通過。</p>
+  </section>
+
+  <section class="card">
+    <h2>レンタカー</h2>
+    <div class="summary">
+      <div><span class="label">店舗</span>オリックスレンタカー<br>高知空港店</div>
+      <div><span class="label">貸出</span>8/13 15:55</div>
+      <div><span class="label">返却</span>8/16 17:15</div>
+      <div><span class="label">車種</span>SAクラス<br>フィット等</div>
+      <div><span class="label">仕様</span>禁煙 / AT</div>
+      <div><span class="label">装備</span>ナビ / ETC / 免責補償</div>
+    </div>
+    <p class="small">高知空港カウンターから店舗までは無料送迎（約3分）。運転免許証を忘れずに。</p>
+  </section>
+
+  <section class="card">
+    <h2>旅行代金</h2>
+    <div class="money">309,000円</div>
+    <p>157,500円 × 2名 ＝ 315,000円<br>ANA楽パック クーポン −6,000円</p>
+    <p class="small">楽天ポイント付与予定：2,809ポイント（仮）</p>
+  </section>
+
+  <section class="card">
+    <h2>出発前チェック</h2>
+    <div class="notice">
+      <ul>
+        <li>ANAオンラインチェックインを各便ごとに実施</li>
+        <li>運転免許証を持参</li>
+        <li>レンタカー返却は8/16 17:15</li>
+        <li>ホテル星羅四万十は夕食付き。到着が遅れそうな場合はホテルへ連絡</li>
+        <li>Google Mapsリンクはナビ起動用、埋め込み地図は位置確認用</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  高知旅行 2026 · 8/13–8/16
+</footer>
+</body>
+</html>
