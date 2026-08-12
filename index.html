@@ -51,6 +51,7 @@
     .event-list{list-style:none;padding:0;margin:12px 0 0}
     .event-list li{padding:9px 0;border-bottom:1px dashed var(--line)}
     .event-list li:last-child{border:0}
+    .event-list .note{display:block;color:var(--muted);font-size:.85rem;line-height:1.6}
     .hotel{border:1px solid var(--line);border-radius:18px;padding:20px;margin-top:18px}
     .hotel-top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
     .pill{display:inline-block;background:var(--accent);color:var(--brand);padding:4px 10px;border-radius:999px;font-size:.78rem;font-weight:800}
@@ -131,10 +132,9 @@
         <h3>高知市 → 須崎・梼原 → 四万十</h3>
         <ul class="event-list">
           <li><b>08:30頃</b> 高知パシフィックホテル チェックアウト・出発</li>
-          <li><b>10:00頃</b> 須崎でランチ（新鮮な海の幸）｜高知市内から車で約1時間</li>
-          <li><b>12:00頃</b> 梼原 着・隈研吾建築めぐり（雲の上のギャラリー → 雲の上の図書館 → まちの駅ゆすはら → 総合庁舎）｜須崎から車で約1時間</li>
-          <li>※雲の上のギャラリー（9:00-17:00）は町中心部から離れているため先に。雲の上の図書館は9:00-20:00（8/14は通常営業）、まちの駅ゆすはらは8:30-18:00。総合庁舎は外壁改修工事中で外観が見えにくい可能性あり</li>
-          <li><b>18:00〜</b> ホテル星羅四万十 チェックイン｜梼原から車で約1時間15分</li>
+          <li><b>10:00頃</b> 須崎でランチ（新鮮な海の幸）<span class="note">高知市内から車で約1時間</span></li>
+          <li><b>12:00頃</b> 梼原 着・隈研吾建築めぐり<span class="note">須崎から車で約1時間。雲の上のギャラリー（9:00-17:00）→ 雲の上の図書館（9:00-20:00）→ まちの駅ゆすはら（8:30-18:00）→ 総合庁舎の順。ギャラリーは町中心部から離れているため先に。総合庁舎は外壁改修工事中で外観が見えにくい可能性あり</span></li>
+          <li><b>18:00〜</b> ホテル星羅四万十 チェックイン<span class="note">梼原から車で約1時間15分</span></li>
           <li>夕食：四万十会席</li>
         </ul>
       </article>
@@ -143,10 +143,10 @@
         <h3>四万十 → 柏島 → 高知市</h3>
         <ul class="event-list">
           <li>ホテル朝食</li>
-          <li><b>08:30頃</b> ホテル星羅四万十 チェックアウト・出発（お盆は道路・駐車場の混雑を想定して早めに）</li>
-          <li><b>11:00頃</b> 宿毛近辺でランチ（新鮮な海の幸）｜ホテルから車で約1時間15分</li>
-          <li><b>12:30頃</b> 柏島ビーチで海と景色を満喫（透明度抜群。シュノーケリングにおすすめ。海のギャラリーは余裕があれば）｜宿毛から車で約40分</li>
-          <li><b>14:30頃</b> 柏島 出発（高知市内まで車で約3時間。お盆は渋滞に注意し夕方の予定は詰めない）</li>
+          <li><b>08:30頃</b> ホテル星羅四万十 チェックアウト・出発<span class="note">お盆は道路・駐車場の混雑を想定して早めに</span></li>
+          <li><b>11:00頃</b> 宿毛近辺でランチ（新鮮な海の幸）<span class="note">ホテルから車で約1時間15分</span></li>
+          <li><b>12:30頃</b> 柏島ビーチで海と景色を満喫<span class="note">宿毛から車で約40分。透明度抜群でシュノーケリングにおすすめ。海のギャラリーは余裕があれば</span></li>
+          <li><b>14:30頃</b> 柏島 出発<span class="note">高知市内まで車で約3時間。お盆は渋滞に注意し夕方の予定は詰めない</span></li>
           <li><b>18:00〜</b> JRクレメントイン高知 チェックイン</li>
           <li><b>18:00</b> 夕食：将人（予約確定）</li>
         </ul>
@@ -156,11 +156,11 @@
         <h3>高知市内 建築めぐり → 東京</h3>
         <ul class="event-list">
           <li><b>朝</b> JRクレメントイン高知 チェックアウト</li>
-          <li><b>09:00</b> 牧野植物園・牧野富太郎記念館（9:00-17:00／最終入園16:30）</li>
-          <li><b>10:30頃</b> 竹林寺（境内参拝 8:00-17:00／名勝庭園・宝物館 8:30-17:00）</li>
-          <li><b>12:00頃</b> 坂本龍馬記念館・桂浜（9:00-17:00／最終入館16:30。桂浜周辺は渋滞注意）｜五台山から車で約25分</li>
-          <li><b>13:30頃</b> 高知城（9:00-17:00／最終入城16:30）｜桂浜から車で約30分</li>
-          <li><b>15:00頃</b> オーテピア高知図書館（日曜 9:00-18:00）｜高知城から約700m・徒歩約10分</li>
+          <li><b>09:00</b> 牧野植物園・牧野富太郎記念館<span class="note">9:00-17:00／最終入園16:30</span></li>
+          <li><b>10:30頃</b> 竹林寺<span class="note">境内参拝 8:00-17:00／名勝庭園・宝物館 8:30-17:00</span></li>
+          <li><b>12:00頃</b> 坂本龍馬記念館・桂浜<span class="note">五台山から車で約25分。9:00-17:00／最終入館16:30。桂浜周辺は渋滞注意</span></li>
+          <li><b>13:30頃</b> 高知城<span class="note">桂浜から車で約30分。9:00-17:00／最終入城16:30</span></li>
+          <li><b>15:00頃</b> オーテピア高知図書館<span class="note">高知城から約700m・徒歩約10分。日曜 9:00-18:00</span></li>
           <li><b>17:15</b> オリックスレンタカー 高知空港店へ返却</li>
           <li><b>18:15</b> 高知空港 出発（ANA570便）</li>
           <li><b>19:45</b> 羽田空港 到着</li>
@@ -289,6 +289,7 @@
           <h3>高知空港 → 高知パシフィックホテル</h3>
         </div>
       </div>
+      <p class="small">所要目安：車で約30分</p>
       <div class="actions">
         <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=高知龍馬空港&amp;destination=高知パシフィックホテル&amp;travelmode=driving" target="_blank" rel="noopener noreferrer">Google Mapsでナビ</a>
       </div>
@@ -301,6 +302,7 @@
           <h3>高知パシフィックホテル → 須崎・梼原 → ホテル星羅四万十</h3>
         </div>
       </div>
+      <p class="small">経由：須崎（ランチ）→ 梼原（隈研吾建築めぐり）｜移動目安：高知市内→須崎 約1時間／須崎→梼原 約1時間／梼原→ホテル 約1時間15分</p>
       <div class="actions">
         <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=高知パシフィックホテル&amp;destination=ホテル星羅四万十&amp;waypoints=須崎市%7C梼原町&amp;travelmode=driving" target="_blank" rel="noopener noreferrer">Google Mapsでナビ</a>
       </div>
@@ -313,6 +315,7 @@
           <h3>ホテル星羅四万十 → 宿毛・柏島 → JRクレメントイン高知</h3>
         </div>
       </div>
+      <p class="small">経由：宿毛（ランチ）→ 柏島（ビーチ）｜移動目安：ホテル→宿毛 約1時間15分／宿毛→柏島 約40分／柏島→高知市内 約3時間</p>
       <div class="actions">
         <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=ホテル星羅四万十&amp;destination=JRクレメントイン高知&amp;waypoints=宿毛市%7C柏島&amp;travelmode=driving" target="_blank" rel="noopener noreferrer">Google Mapsでナビ</a>
       </div>
@@ -325,6 +328,7 @@
           <h3>JRクレメントイン高知 → 高知市内 建築めぐり → 高知空港</h3>
         </div>
       </div>
+      <p class="small">経由：牧野植物園 → 竹林寺 → 桂浜 → 高知城 → オーテピア｜移動目安：五台山→桂浜 約25分／桂浜→高知城 約30分／高知城→オーテピア 徒歩約10分／市内→空港 約30分</p>
       <div class="actions">
         <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=JRクレメントイン高知&amp;destination=高知龍馬空港&amp;waypoints=牧野植物園%7C竹林寺%7C桂浜%7C高知城%7Cオーテピア高知図書館&amp;travelmode=driving" target="_blank" rel="noopener noreferrer">Google Mapsでナビ</a>
       </div>
